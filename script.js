@@ -1,33 +1,3 @@
-// Menú hamburguesa responsive
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
-if (hamburger && navLinks) {
-    hamburger.addEventListener('click', function() {
-        const expanded = this.getAttribute('aria-expanded') === 'true';
-        this.setAttribute('aria-expanded', !expanded);
-        this.classList.toggle('open');
-        navLinks.classList.toggle('open');
-    });
-    // Cierra el menú al hacer click fuera
-    document.addEventListener('click', function(e) {
-        if (window.innerWidth <= 900 && !hamburger.contains(e.target) && !navLinks.contains(e.target)) {
-            hamburger.classList.remove('open');
-            hamburger.setAttribute('aria-expanded', 'false');
-            navLinks.classList.remove('open');
-        }
-    });
-    // Cierra el menú al hacer click en un enlace
-    navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', function() {
-            if (window.innerWidth <= 900) {
-                hamburger.classList.remove('open');
-                hamburger.setAttribute('aria-expanded', 'false');
-                navLinks.classList.remove('open');
-            }
-        });
-    });
-}
-
 // Siempre hacer scroll al tope al recargar la página
 window.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: 'auto' });
