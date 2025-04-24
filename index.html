@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Particles.js CSS/JS -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- AOS Animate On Scroll CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FELPONIC - Federación de Levantamiento de Potencia de Nicaragua</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <!-- AOS Animate On Scroll CSS -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <span class="brand">FELPONIC</span>
+        </div>
+        
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="nav-link active">Inicio</a></li>
+            <li class="dropdown">
+    <a href="#acerca" class="nav-link">Acerca de</a>
+    <ul class="dropdown-content">
+        <li><a href="#mision">Misión</a></li>
+        <li><a href="#vision">Visión</a></li>
+        <li><a href="#historia">Historia</a></li>
+    </ul>
+</li>
+            <li><a href="#eventos" class="nav-link">Eventos</a></li>
+            <li><a href="galeria.html" class="nav-link">Galería de Fotos</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="index.html#registro" class="btn-registro" data-aos="zoom-in" data-aos-delay="200">Registro</a>
+        
+    </nav>
+    <header class="hero" id="inicio" data-aos="fade-down" data-aos-duration="1200" style="position:relative;overflow:hidden;">
+        <div id="particles-js" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;"></div>
+        <div class="hero-center-all" style="position:relative;z-index:1;">
+            <img src="logo.png" alt="FELPONIC Logo" class="hero-logo-large">
+            <div class="hero-content hero-content-center">
+                <h1>¡Bienvenido a FELPONIC!</h1>
+                <p>Federación de Levantamiento de Potencia de Nicaragua</p>
+                <a href="#registro" class="btn-cta">Únete Ahora</a>
+            </div>
+        </div>
+    </header>
+    <section id="mision" class="section" data-aos="fade-up" data-aos-duration="1100">
+        <h2>Misión</h2>
+        <p>Promover el levantamiento de potencia en Nicaragua, fomentando valores de disciplina, esfuerzo y comunidad.</p>
+    </section>
+    <section id="vision" class="section section-alt" data-aos="fade-up" data-aos-duration="1100">
+        <h2>Visión</h2>
+        <p>Ser la federación líder en el desarrollo del powerlifting a nivel nacional e internacional.</p>
+    </section>
+    <section id="historia" class="section" data-aos="fade-up" data-aos-duration="1100">
+        <h2>Historia</h2>
+        <p>FELPONIC fue fundada para unir a los atletas y promover el crecimiento del levantamiento de potencia en Nicaragua.</p>
+    </section>
+    <section id="eventos" class="section section-alt" data-aos="fade-up" data-aos-duration="1100">
+        <h2>Eventos</h2>
+        <p>Próximos campeonatos, competencias y actividades de la federación.</p>
+    </section>
+    <section id="contacto" class="section section-alt" data-aos="fade-up" data-aos-duration="1100">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 FELPONIC. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+    <!-- AOS Animate On Scroll JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <!-- Particles.js config -->
+    <script>
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {"value": 48, "density": {"enable": true, "value_area": 900}},
+        "color": {"value": ["#e30613", "#ffc700", "#fff"]},
+        "shape": {"type": "circle"},
+        "opacity": {"value": 0.4, "random": true},
+        "size": {"value": 4, "random": true},
+        "line_linked": {"enable": true, "distance": 120, "color": "#ffc700", "opacity": 0.2, "width": 1},
+        "move": {"enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out"}
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {"onhover": {"enable": true, "mode": "repulse"}},
+        "modes": {"repulse": {"distance": 100, "duration": 0.4}}
+      },
+      "retina_detect": true
+    });
+    </script>
+</body>
+</html>

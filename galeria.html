@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+    <!-- AOS Animate On Scroll CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Fotos | FELPONIC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <!-- AOS Animate On Scroll CSS -->
+    <!-- Lightbox2 CSS -->
+</head>
+<body>
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="1200">
+        <div class="logo-container">
+            <span class="brand">FELPONIC</span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li class="dropdown">
+                <a href="index.html#acerca" class="nav-link">Acerca de</a>
+                <ul class="dropdown-content">
+                    <li><a href="index.html#mision">Misión</a></li>
+                    <li><a href="index.html#vision">Visión</a></li>
+                    <li><a href="index.html#historia">Historia</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#eventos" class="nav-link">Eventos</a></li>
+            <li><a href="galeria.html" class="nav-link active">Galería de Fotos</a></li>
+            <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="index.html#registro" class="btn-registro" data-aos="zoom-in" data-aos-delay="200">Registro</a>
+    </nav>
+    <section id="galeria" class="section" data-aos="fade-up" data-aos-duration="1100">
+        <h2>Galería de Fotos</h2>
+        <div class="gallery">
+                <a href="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80" data-lightbox="galeria" data-title="Evento 1">
+                    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80" alt="Evento 1" class="gallery-img">
+                </a>
+                <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" data-lightbox="galeria" data-title="Evento 2">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Evento 2" class="gallery-img">
+                </a>
+                <a href="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80" data-lightbox="galeria" data-title="Evento 3">
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="Evento 3" class="gallery-img">
+                </a>
+            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80" alt="Evento 1" class="gallery-img">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Evento 2" class="gallery-img">
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="Evento 3" class="gallery-img">
+        </div>
+    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+    <footer>
+        <p>&copy; 2025 FELPONIC. Todos los derechos reservados.</p>
+    </footer>
+    <script src="galeria.js"></script>
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    <!-- AOS Animate On Scroll JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
